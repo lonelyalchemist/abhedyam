@@ -1,0 +1,16 @@
+{
+  "name": "abhedya-sdk",
+  "version": "1.0.1",
+  "description": "Node.js SDK for Abhedya: Sanskrit-Encoded Post-Quantum Cryptography",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ffi-napi": "^4.0.3",
+    "ref-napi": "^3.0.3",
+    "ref-array-napi": "^1.2.2"
+  },
+  "author": "Abhedyam Project",
+  "license": "MIT"
+}
