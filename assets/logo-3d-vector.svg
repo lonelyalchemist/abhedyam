@@ -1,0 +1,73 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Flame Gradients -->
+    <linearGradient id="flameBase" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#8B4513" /> <!-- SaddleBrown -->
+      <stop offset="100%" stop-color="#DAA520" /> <!-- GoldenRod -->
+    </linearGradient>
+    <linearGradient id="flameMid" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.8" /> <!-- Gold -->
+      <stop offset="100%" stop-color="#FFA500" stop-opacity="0.9" /> <!-- Orange -->
+    </linearGradient>
+    <linearGradient id="flameHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FFFFE0" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ring Gradients -->
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="80%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="95%" stop-color="#4169E1" stop-opacity="0.6" /> <!-- RoyalBlue -->
+      <stop offset="100%" stop-color="#00BFFF" stop-opacity="0.8" /> <!-- DeepSkyBlue -->
+    </radialGradient>
+    
+    <filter id="blurFilter">
+       <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: Dark Void (Optional, remove for transparency, kept here for 'cinematic' feel if needed, but user wants transparent) 
+       <rect width="512" height="512" fill="#050510" rx="32"/> 
+  -->
+
+  <!-- HORIZONTAL PLANE (The Manifold) -->
+  <g transform="translate(256, 380) scale(1, 0.3)">
+    <!-- Back part of ring -->
+    <ellipse cx="0" cy="0" rx="200" ry="200" fill="none" stroke="url(#ringGlow)" stroke-width="15" opacity="0.5" />
+    
+    <!-- Orbit Lines -->
+    <ellipse cx="0" cy="0" rx="180" ry="180" fill="none" stroke="#FFD700" stroke-width="4" stroke-dasharray="20 40" opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="220" ry="220" fill="none" stroke="#FFF" stroke-width="2" stroke-dasharray="5 15" opacity="0.3" />
+  </g>
+
+  <!-- VERTICAL FLAME (The Truth) -->
+  <g transform="translate(256, 380)">
+    <!-- Base Layer (Dark Depth) -->
+    <path d="M 0 10 
+             Q -60 -50 -20 -150 
+             Q -50 -250 0 -340 
+             Q 50 -250 20 -150 
+             Q 60 -50 0 10 Z" 
+          fill="url(#flameBase)" />
+
+    <!-- Mid Layer (Body) -->
+    <path d="M 0 0 
+             Q -40 -60 -15 -140 
+             Q -30 -240 0 -310 
+             Q 30 -240 15 -140 
+             Q 40 -60 0 0 Z" 
+          fill="url(#flameMid)" />
+
+    <!-- Highlight Layer (Inner Core) -->
+    <path d="M -5 -20 
+             Q -20 -80 0 -200 
+             Q 20 -80 5 -20 Z" 
+          fill="url(#flameHighlight)" filter="url(#blurFilter)" />
+  </g>
+
+  <!-- Front part of ring (Overlaying the flame base) -->
+  <g transform="translate(256, 380) scale(1, 0.3)">
+     <path d="M -200 0 A 200 200 0 0 0 200 0" fill="none" stroke="url(#ringGradient)" stroke-width="5" opacity="0.2" />
+  </g>
+
+</svg>
