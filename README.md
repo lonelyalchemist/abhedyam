@@ -49,6 +49,14 @@ Compare Abhedya against Top 20 NIST PQC candidates:
 
 See [superiority.md](docs/superiority.md) for a detailed breakdown of why Abhedya outperforms purely mathematical frameworks in speed, philosophy, and implementation.
 
+## Security Hardening (v1.0.1)
+
+Following a rigorous security audit by independent researchers, the core library has been hardened against advanced side-channel attacks:
+
+- **Timing Oracle Elimination**: Implemented **Constant-Time Encoding** with AVX2-optimized fixed-window search, ensuring encryption time is independent of the secret message.
+- **Bias Elimination**: Enforced strict **Modulus Truncation** ($q < 3168$) to guarantee perfectly uniform mapping to the Sanskrit alphabet, removing all statistical bias.
+- **Steganographic Integrity**: Formalized the distinction between **Standard Mode** (FIPS-compliant noise) and **Metered Mode** (Steganographic privacy) to prevent distributional drift vulnerabilities.
+
 ---
 
 **ParamTatva**, 2026.
