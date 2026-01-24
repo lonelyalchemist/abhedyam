@@ -1,22 +1,68 @@
-# Abhedya Node.js SDK
+# Abhedya SDK for Node.js
 
-To use Abhedya in Node.js, use the `ffi-napi` library to bind to the native shared object.
+**Unmatched Speed. Unbreakable Security.**
 
-## Implementation Guide
+Abhedya is a high-performance Post-Quantum Cryptography (PQC) library enabling **Sanskrit-Encoded** encryption. This SDK provides Node.js bindings to the optimized Rust core.
+
+## Features
+
+- **Quantum Safety**: Lattice-based LWE implementation ($N=768$).
+- **Dual Mode**:
+  - **Standard**: High-throughput binary encryption.
+  - **Metered**: Steganographic mode producing Sanskrit-metered ciphertexts.
+- **Performance**: FFI-based bindings for native speed.
+
+## Installation
+
+```bash
+npm install abhedya-sdk
+```
+
+## Usage
 
 ```javascript
-const ffi = require("ffi-napi");
-const path = require("path");
+const { Abhedya, EncryptionMode } = require("abhedya-sdk");
 
-const libPath = path.join(__dirname, "../native/lib/libabhedya_ffi");
+// Initialize
+const sdk = new Abhedya();
 
-const abhedya = ffi.Library(libPath, {
-  abhedya_keygen: ["int", ["pointer", "pointer", "pointer", "pointer"]],
-  abhedya_encrypt_verse: [
-    "int",
-    ["pointer", "string", "int", "pointer", "pointer"],
-  ],
-});
+// 1. Generate KeyPair
+console.log("Generating Keys...");
+const keys = sdk.keygen();
+// keys.publicKey, keys.secretKey (Buffers)
 
-module.exports = abhedya;
+// 2. Encrypt
+const message = "The quick brown fox";
+const ciphertext = sdk.encrypt(
+  keys.publicKey,
+  message,
+  EncryptionMode.STANDARD,
+);
+
+// 3. Decrypt
+const plaintext = sdk.decrypt(keys.secretKey, ciphertext);
+console.log("Decrypted:", plaintext.toString());
 ```
+
+## API
+
+### `keygen()`
+
+Returns `{ publicKey: Buffer, secretKey: Buffer }`.
+
+### `encrypt(publicKey, message, mode)`
+
+- `publicKey`: Buffer
+- `message`: String or Buffer
+- `mode`: `EncryptionMode.STANDARD` (0) or `EncryptionMode.METERED` (1)
+- Returns: `Buffer` (Ciphertext)
+
+### `decrypt(secretKey, ciphertext)`
+
+- `secretKey`: Buffer
+- `ciphertext`: Buffer
+- Returns: `Buffer`
+
+## License
+
+MIT License.
