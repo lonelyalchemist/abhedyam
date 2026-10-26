@@ -2,6 +2,8 @@
   <img src="assets/abhedyam-logo.jpeg" alt="Abhedyam Logo" width="300"/>
 </p>
 
+**Languages:** [English](README.md) | [Português](README.pt-BR.md) | [Español](README.es-CL.md)
+
 # Abhedyam (अभेद्यम्)
 
 **Abhedyam** ("The Unbreakable") is a paradigm-shifting Post-Quantum Cryptography (PQC) framework that harmonizes mathematical lattice theory with the topological manifold of the Sanskrit language.
