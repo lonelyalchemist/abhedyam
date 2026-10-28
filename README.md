@@ -2,7 +2,7 @@
   <img src="assets/abhedyam-logo.jpeg" alt="Abhedyam Logo" width="300"/>
 </p>
 
-**Languages:** [English](README.md) | [Português](README.pt-BR.md) | [Español](README.es-CL.md)
+**Languages:** [English](README.md) | [Português](README.pt.md) | [Español](README.es.md)
 
 # Abhedyam (अभेद्यम्)
 
