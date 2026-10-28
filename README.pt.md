@@ -2,7 +2,7 @@
   <img src="assets/abhedyam-logo.jpeg" alt="Abhedyam Logo" width="300"/>
 </p>
 
-**Idiomas:** [English](README.md) | [Português](README.pt.md) | [Español](README.es-ES.md)
+**Idiomas:** [English](README.md) | [Português](README.pt.md) | [Español](README.es.md)
 
 # Abhedyam (अभेद्यम्)
 
@@ -14,54 +14,53 @@
 
 Ao contrário dos framework tradicionais de PQC, que dependem exclusivamente do aumento do tamanho das chaves e das distribuições de erros para combater adversários quânticos, o Abhedya introduz uma camada de **esteganografia baseada em linguagem**. Ao mapear primitivas criptográficas para o alfabeto sânscrito ordenado matematicamente (Varnamala) e aplicar a métrica poética (Chhandas), o Abhedya consegue:
 
-- **Quantum Security**: Core Lattice-based hardness (LWE) matching NIST Level 3 (Kyber-768).
-- **Zero-Latency Decryption**: **~5 µs** decryption time (20x faster than Kyber) via direct manifold mapping.
-- **Steganography**: Ciphertext indistinguishable from valid Sanskrit "Mahakavya" (Epic Poetry).
+- **Segurança quântica**: Resistência baseada na rede de reticulados (LWE) em conformidade com o Nível 3 do NIST (Kyber-768).
+- **Descriptografia com latência zero**: Tempo de descriptografia de **~5 µs**(20 vezes mais rápido que o Kyber) por meio de mapeamento direto das variedades topológicas.
+- ***Esteganografia**: Ciphertext indistinguível de uma poesia épica ("Mahakavya") válida em sânscrito.
 
-## Architecture
+## Arquitetura
+Este repositório contém os binários verificados e a documentação do ecossistema Abhedya. O código-fonte principal é de propriedade da **ParamTatva**.
 
-This repository contains the verified binaries and documentation for the Abhedya ecosystem. The core source code is proprietary to **ParamTatva**.
+- `bin/`: Ferramentas de linha de comando pré-compiladas para macOS/Linux (`abhedya-cli`).
+- `docs/`: Especificações técnicas e relatórios de conformidade.
 
-- `bin/`: Pre-compiled CLI tools for macOS/Linux (`abhedya-cli`).
-- `docs/`: Technical specifications and compliance reports.
+## Uso
 
-## Usage
+### 1. Instalação
 
-### 1. Installation
-
-Download the `abhedya-cli` binary from the `bin/` directory and add it to your PATH.
+Baixe o binário `abhedya-cli` do diretório `bin/` e o adicione ao seu PATH.
 
 ### 2. Benchmarking
 
-Verify the performance and compliance on your local machine:
+Verifique o desempenho e a conformidade na sua máquina local:
 
 ```bash
-# Run Standard Mode Benchmark
+# Execute o teste de benchmark do modo padrão
 ./bin/abhedya-cli --benchmark
 
-# Run Metered (Poetic) Mode Benchmark
+# Execute o teste de benchmark do modo métrico (poético)
 ./bin/abhedya-cli --benchmark --meter
 ```
 
-### 3. Comparison
+### 3. Comparação
 
-Compare Abhedya against Top 20 NIST PQC candidates:
+Compare o Abhedya com os 20 principais candidatos a PQC do NIST:
 
 ```bash
 ./bin/abhedya-cli --compare
 ```
 
-## Superiority Analysis
+## Análise de Superioridade
 
-See [superiority.md](docs/superiority.md) for a detailed breakdown of why Abhedya outperforms purely mathematical frameworks in speed, philosophy, and implementation.
+ Veja [superiority.md](docs/superiority.md) para uma análise detalhada sobre por que o Abhedya supera os frameworks puramente matemáticos em velocidade, filosofia e implementação.
 
-## Security Hardening (v1.0.1)
+## Reforço de segurança (v1.0.1)
 
-Following a rigorous security audit by independent researchers, the core library has been hardened against advanced side-channel attacks:
+Após uma rigorosa auditoria de segurança realizada por pesquisadores independentes, a biblioteca principal foi reforçada contra ataques avançados de canal lateral:
 
-- **Timing Oracle Elimination**: Implemented **Constant-Time Encoding** with AVX2-optimized fixed-window search, ensuring encryption time is independent of the secret message.
-- **Bias Elimination**: Enforced strict **Modulus Truncation** ($q < 3168$) to guarantee perfectly uniform mapping to the Sanskrit alphabet, removing all statistical bias.
-- **Steganographic Integrity**: Formalized the distinction between **Standard Mode** (FIPS-compliant noise) and **Metered Mode** (Steganographic privacy) to prevent distributional drift vulnerabilities.
+- **Eliminação de Oráculos de Tempo**: Implementou-se a **Codificação em Tempo Constante** com busca em janela fixa otimizada via AVX2, garantindo que o tempo de criptografia seja independente da mensagem secreta.
+- **Eliminação de Viés**: Aplicou-se rigorosamente o **truncamento por módulo** ($q < 3168$) para garantir um mapeamento perfeitamente uniforme para o alfabeto sânscrito, eliminando todo viés estatístico.
+- **Integridade Esteganográfica:** Formalizou-se a distinção entre o **Modo Padrão** (ruído em conformidade com a norma FIPS) e o **Modo Métrico** (privacidade esteganográfica) para evitar vulnerabilidades decorrentes de desvios distributivos.
 
 ---
 
