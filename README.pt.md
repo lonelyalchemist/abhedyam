@@ -21,7 +21,7 @@ Ao contrário dos framework tradicionais de PQC, que dependem exclusivamente do 
 ## Arquitetura
 Este repositório contém os binários verificados e a documentação do ecossistema Abhedya. O código-fonte principal é de propriedade da **ParamTatva**.
 
-- `bin/`: Ferramentas de linha de comando pré-compiladas para macOS/Linux (`abhedya-cli`).
+- `bin/`: Ferramentas da CLI pré-compiladas para macOS/Linux (`abhedya-cli`).
 - `docs/`: Especificações técnicas e relatórios de conformidade.
 
 ## Uso
