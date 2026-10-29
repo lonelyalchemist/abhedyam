@@ -16,7 +16,7 @@ Ao contrário dos framework tradicionais de PQC, que dependem exclusivamente do 
 
 - **Segurança quântica**: Resistência baseada na rede de reticulados (LWE) em conformidade com o Nível 3 do NIST (Kyber-768).
 - **Descriptografia com latência zero**: Tempo de descriptografia de **~5 µs**(20 vezes mais rápido que o Kyber) por meio de mapeamento direto das variedades topológicas.
-- ***Esteganografia**: Ciphertext indistinguível de uma poesia épica ("Mahakavya") válida em sânscrito.
+- **Esteganografia**: Ciphertext indistinguível de uma poesia épica ("Mahakavya") válida em sânscrito.
 
 ## Arquitetura
 Este repositório contém os binários verificados e a documentação do ecossistema Abhedya. O código-fonte principal é de propriedade da **ParamTatva**.
