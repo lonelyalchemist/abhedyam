@@ -8,7 +8,7 @@
 
 **Abhedyam** ("O Inquebrável") é um framework disruptivo de criptografia pós-quântica que harmoniza a teoria matemática das redes com a variedade topológica da língua sânscrita.
 
-> _"Números são construtos. A linguagem é a Verdade."_
+> _"Números são construtos. A linguagem é a verdade."_
 
 ## Visão geral
 
