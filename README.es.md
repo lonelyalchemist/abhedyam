@@ -15,7 +15,7 @@
 A diferencia de los frameworks tradicionales de PQC, que se basan únicamente en el aumento del tamaño de las claves y las distribuciones de error para combatir a los adversarios cuánticos, Abhedya introduce una capa de **esteganografía basada en el lenguaje**. Al mapear primitivas criptográficas al alfabeto sánscrito ordenado matemáticamente (Varnamala) y aplicar la métrica poética (Chhandas), Abhedya logra:
 
 - **Seguridad cuántica**: Resistencia basada en retículos (LWE) que cumple con el Nivel 3 del NIST (Kyber-768).
-- ***Descifrado sin latencia**: Tiempo de descifrado de **~5 µs** (20 veces más rápido que Kyber) mediante mapeo directo de las variedades topológicas. 
+- **Descifrado sin latencia**: Tiempo de descifrado de **~5 µs** (20 veces más rápido que Kyber) mediante mapeo directo de las variedades topológicas. 
 - **Esteganografía**: Ciphertext indistinguible de una poesía épica ("Mahakavya") válida en sánscrito. 
 
 ## Arquitectura
