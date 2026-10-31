@@ -20,7 +20,7 @@ A diferencia de los frameworks tradicionales de PQC, que se basan únicamente en
 
 ## Arquitectura
 
-Este repositorio contiene los binarios verificados y la documentación del ecosistema Abhedya. El código fuente principal es propiedad de **ParamTatva**.
+Este repositorio contiene los binarios verificados y la documentación del ecosistema Abhedya. El código fuente principal es propiedad de **ParamTatva**, distribuido bajo la licencia MIT, que permite su uso, modificación y redistribución.
 
 - `bin/`: Herramientas de la CLI precompiladas para macOS/Linux (`abhedya-cli`).
 - `docs/`: Especificaciones técnicas e informes de conformidad.
