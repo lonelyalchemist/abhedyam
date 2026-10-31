@@ -19,7 +19,7 @@ Ao contrário dos frameworks tradicionais de PQC, que dependem exclusivamente do
 - **Esteganografia**: Ciphertext indistinguível de uma poesia épica ("Mahakavya") válida em sânscrito.
 
 ## Arquitetura
-Este repositório contém os binários verificados e a documentação do ecossistema Abhedya. O código-fonte principal é de propriedade da **ParamTatva**.
+Este repositório contém os binários verificados e a documentação do ecossistema Abhedya. O código-fonte principal é de propriedade da **ParamTatva**, distribuído sob a licença MIT, que permite seu uso, modificação e redistribuição.
 
 - `bin/`: Ferramentas da CLI pré-compiladas para macOS/Linux (`abhedya-cli`).
 - `docs/`: Especificações técnicas e relatórios de conformidade.
