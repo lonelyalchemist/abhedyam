@@ -12,7 +12,7 @@
 
 ## Visão geral
 
-Ao contrário dos framework tradicionais de PQC, que dependem exclusivamente do aumento do tamanho das chaves e das distribuições de erros para combater adversários quânticos, o Abhedya introduz uma camada de **esteganografia baseada em linguagem**. Ao mapear primitivas criptográficas para o alfabeto sânscrito ordenado matematicamente (Varnamala) e aplicar a métrica poética (Chhandas), o Abhedya consegue:
+Ao contrário dos frameworks tradicionais de PQC, que dependem exclusivamente do aumento do tamanho das chaves e das distribuições de erros para combater adversários quânticos, o Abhedya introduz uma camada de **esteganografia baseada em linguagem**. Ao mapear primitivas criptográficas para o alfabeto sânscrito ordenado matematicamente (Varnamala) e aplicar a métrica poética (Chhandas), o Abhedya consegue:
 
 - **Segurança quântica**: Resistência baseada na rede de reticulados (LWE) em conformidade com o Nível 3 do NIST (Kyber-768).
 - **Descriptografia com latência zero**: Tempo de descriptografia de **~5 µs** (20 vezes mais rápido que o Kyber) por meio de mapeamento direto das variedades topológicas.
