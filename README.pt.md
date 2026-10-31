@@ -60,7 +60,7 @@ Após uma rigorosa auditoria de segurança realizada por pesquisadores independe
 
 - **Eliminação de Oráculos de Tempo**: Implementou-se a **Codificação em Tempo Constante** com busca em janela fixa otimizada via AVX2, garantindo que o tempo de criptografia seja independente da mensagem secreta.
 - **Eliminação de Viés**: Aplicou-se rigorosamente o **truncamento por módulo** ($q < 3168$) para garantir um mapeamento perfeitamente uniforme para o alfabeto sânscrito, eliminando todo viés estatístico.
-- **Integridade Esteganográfica:** Formalizou-se a distinção entre o **Modo Padrão** (ruído em conformidade com a norma FIPS) e o **Modo Métrico** (privacidade esteganográfica) para evitar vulnerabilidades decorrentes de desvios distributivos.
+- **Integridade Esteganográfica:** Formalizou-se a distinção entre o **Modo Padrão** (ruído em conformidade com a norma FIPS) e o **Modo Métrico** (privacidade esteganográfica) para evitar vulnerabilidades decorrentes de desvios distribucionais.
 
 ---
 
