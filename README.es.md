@@ -10,7 +10,7 @@
 
 > _"Los números son construcciones. El lenguaje es la verdad."_
 
-## Visión General
+## Visión general
 
 A diferencia de los frameworks tradicionales de PQC, que se basan únicamente en el aumento del tamaño de las claves y las distribuciones de error para combatir a los adversarios cuánticos, Abhedya introduce una capa de **esteganografía basada en el lenguaje**. Al mapear primitivas criptográficas al alfabeto sánscrito ordenado matemáticamente (Varnamala) y aplicar la métrica poética (Chhandas), Abhedya logra:
 
