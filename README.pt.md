@@ -35,10 +35,10 @@ Baixe o binário `abhedya-cli` do diretório `bin/` e o adicione ao seu PATH.
 Verifique o desempenho e a conformidade na sua máquina local:
 
 ```bash
-# Execute o teste de benchmark do modo padrão
+# Execute o benchmark do modo padrão
 ./bin/abhedya-cli --benchmark
 
-# Execute o teste de benchmark do modo métrico (poético)
+# Execute o benchmark do modo métrico (poético)
 ./bin/abhedya-cli --benchmark --meter
 ```
 
